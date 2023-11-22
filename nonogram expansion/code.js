@@ -312,11 +312,14 @@ function check_win(my_board,level){
 function winning_message(){
     pause_timer1()
     pause_timer2()
-    const minutes = Math.floor(seconds1 / 60);
-    const seconds_remaining = seconds1%60;
+    const minutes1 = Math.floor(seconds1 / 60);
+    const minutes2 = Math.floor(seconds2 / 60);
+    const seconds_remaining1 = seconds1%60;
+    const seconds_remaining2 = seconds2%60;
     let message = `congratulations, you won! 
-you completed the puzzle in ${moves} moves,
-and it took you ${minutes} minutes and ${seconds_remaining} seconds`
+you completed the puzzle:
+player 1 used ${moves1} moves, and took ${minutes1} minutes and ${seconds_remaining1} seconds.
+player 2 used ${moves2} moves, and took ${minutes2} minutes and ${seconds_remaining2} seconds.`
     alert(message)
 }
 
