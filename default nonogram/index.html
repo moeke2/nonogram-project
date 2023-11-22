@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>    
+        <div id="stats">
+            <label id="move_count">0 moves</label>
+            <label id="timer">00:00</label>
+            <select id="select_level" onchange="change_level(this.value)">
+                <option value='trivial' selected>Trivial</option>
+                <option value='easy'>Easy</option>
+                <option value='intermediate'>Intermediate</option>
+                <option value='hard'>Hard</option>
+            </select>
+        </div>
+        <label id="lives_count">3 lives</label>
+        <table id="board_container">
+            <tr> <td> table comes here</td></tr>
+        </table>
+        <button id="restart_button" onclick="restart_game()">RESTART</button>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+table, th,td {
+	border-collapse: collapse;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    color: rgb(154, 226, 227);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 67, 87);
+}
+
+
+
+
+
+
+.top_numbers{
+    width: 2rem;
+    text-align: center;
+    border: 1px solid grey;
+
+}
+
+.left_numbers{
+    height: 2rem;
+    text-align: right;
+    min-width: 2rem;
+    border: 1px solid grey;
+
+}
+span {
+    margin-left: 0.7rem;
+    margin-right: 0.4rem;
+}
+
+
+
+
+.board_element{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border: 0.1px solid black;
+}
+
+.empty{
+    background-color: white;
+
+}
+
+.marked_empty{
+    background-color: red;
+
+}
+
+.filled{
+    background-color: black;
+    border: 0.1px solid white;
+
+}
+
+
